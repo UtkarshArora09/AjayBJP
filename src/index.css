@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #FFFBF7; /* Page Background */
+    color: #1A0E00; /* Dark Text */
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FFFBF7;
+}
+::-webkit-scrollbar-thumb {
+  background: #E8621A;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F47B30;
+}
+
+/* Texture Overlay */
+.repeating-bg-texture {
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(232, 98, 26, 0.02) 0px,
+    rgba(232, 98, 26, 0.02) 1px,
+    transparent 1px,
+    transparent 8px
+  );
+}
+
+/* Simple slow pulse for loading lotus */
+@keyframes slowPulse {
+  0% {
+    opacity: 0.4;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+.loading-lotus-pulse {
+  animation: slowPulse 1.2s ease-in-out alternate infinite;
+}
+
+/* Swiper custom overrides */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #FFFFFF !important;
+  background-color: rgba(232, 98, 26, 0.6) !important;
+  width: 48px !important;
+  height: 48px !important;
+  border-radius: 50% !important;
+  transition: background-color 300ms ease, transform 200ms ease !important;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: #E8621A !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 18px !important;
+  font-weight: bold !important;
+}
+
+.swiper-pagination-bullets {
+  bottom: 24px !important;
+}
+
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.4) !important;
+  opacity: 1 !important;
+  width: 8px !important;
+  height: 8px !important;
+  margin: 0 6px !important;
+  transition: all 300ms ease !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #E8621A !important;
+  width: 24px !important;
+  border-radius: 4px !important;
+}
+
+/* Timeline vertical line dashed effect */
+.timeline-line {
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 4px,
+    rgba(232, 98, 26, 0.4) 4px,
+    rgba(232, 98, 26, 0.4) 8px
+  );
+}
