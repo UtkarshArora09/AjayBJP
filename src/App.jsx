@@ -1132,7 +1132,7 @@ const GallerySection = () => {
   const handlePrev = () => {
     setLightboxData((prev) => {
       if (!prev) return null;
-      const total = prev.type === 'gallery' ? t.gallery.photos.length : 18;
+      const total = prev.type === 'gallery' ? t.gallery.photos.length : 21;
       return { ...prev, index: (prev.index - 1 + total) % total };
     });
   };
@@ -1140,7 +1140,7 @@ const GallerySection = () => {
   const handleNext = () => {
     setLightboxData((prev) => {
       if (!prev) return null;
-      const total = prev.type === 'gallery' ? t.gallery.photos.length : 18;
+      const total = prev.type === 'gallery' ? t.gallery.photos.length : 21;
       return { ...prev, index: (prev.index + 1) % total };
     });
   };
@@ -1255,7 +1255,7 @@ const GallerySection = () => {
           </h3>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {Array.from({ length: 18 }).map((_, idx) => {
+            {Array.from({ length: 21 }).map((_, idx) => {
               const num = idx + 1;
               const imgSrc = `photos/he${num}.jpeg`;
               return (
@@ -1386,7 +1386,7 @@ const GallerySection = () => {
                 <div className="inline-block px-3 py-1 bg-white/10 rounded text-[10px] text-white/80 font-inter">
                   {lightboxData.type === 'gallery'
                     ? `Image ${lightboxData.index + 1} of ${t.gallery.photos.length}`
-                    : `Image ${lightboxData.index + 1} of 18`}
+                    : `Image ${lightboxData.index + 1} of 21`}
                 </div>
               </div>
             </motion.div>
