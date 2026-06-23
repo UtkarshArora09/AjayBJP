@@ -21,6 +21,7 @@ const translations = {
     nav: {
       home: "होम",
       about: "परिचय",
+      vision: "विजन",
       journey: "सफर",
       work: "समाज सेवा",
       gallery: "गैलरी",
@@ -76,7 +77,8 @@ const translations = {
         { label: "उम्र", value: "47 वर्ष" },
         { label: "शिक्षा", value: "एम.ए., पी.एच.डी." },
         { label: "पिता", value: "श्री शिवभूषण शुक्ल" },
-        { label: "भाई", value: "डॉ. मनोज शुक्ल, डॉ. विनोद शुक्ल" },
+        { label: "भाई", value: "मनोज शुक्ल, डॉ. विनोद शुक्ल" },
+        { label: "पुत्र", value: "निशांत शुक्ल, ईशांत शुक्ल" },
         { label: "व्यवसाय", value: "कृषि एवं समाज सेवा" },
         { label: "निवास स्थान", value: "बड़ागाँव, जंगीगंज, भदोही, उत्तर प्रदेश" },
         { label: "राजनीतिक दल", value: "भारतीय जनता पार्टी" }
@@ -201,18 +203,73 @@ const translations = {
         "कार्यकर्ता बैठक",
         "विकास कार्यों का निरीक्षण",
         "जनता दरबार",
-        "समारोह संबोधन"
+        "समारोह संबोधन",
+        "सामाजिक गोष्ठी",
+        "वृक्षारोपण अभियान",
+        "स्वतंत्रता दिवस समारोह",
+        "विकास योजनाओं का शिलान्यास",
+        "गरीब कल्याण वितरण",
+        "मार्गदर्शन एवं युवा संवाद"
       ]
     },
     vision: {
-      heading: "विजन",
-      quote: "हमारी ताकत हमारी एकता में है, हमारा भविष्य हमारे संकल्प में है",
-      attribution: "— डॉ. अजय शुक्ल",
-      pillars: [
-        { icon: "🏗️", title: "विकास", desc: "भदोही की तरक्की के लिए समर्पित" },
-        { icon: "🎓", title: "शिक्षा", desc: "युवाओं को अवसर देना हमारी प्राथमिकता" },
-        { icon: "🤝", title: "सामाजिक न्याय", desc: "हर वर्ग की आवाज़ उठाना हमारा कर्तव्य" }
-      ]
+      heading: "ज्ञानपुर के लिए विजन",
+      subHeading: "एक विकसित, समृद्ध और समावेशी ज्ञानपुर",
+      description: "मेरा विजन ज्ञानपुर को एक ऐसे निर्वाचन क्षेत्र के रूप में विकसित करना है जहां हर परिवार को गुणवत्तापूर्ण शिक्षा, स्वास्थ्य सेवा, रोजगार के अवसर, आधुनिक बुनियादी ढांचा और प्रभावी सार्वजनिक सेवाएं प्राप्त हों।",
+      points: [
+        {
+          num: "01",
+          title: "बेहतर सड़कें और कनेक्टिविटी",
+          desc: "गांवों, बाजारों और कस्बों को जोड़ने वाली सड़कों में सुधार करना ताकि किसान, छात्र और व्यवसायी सुरक्षित और कुशलता से यात्रा कर सकें।"
+        },
+        {
+          num: "02",
+          title: "किसानों का सशक्तिकरण",
+          desc: "बेहतर सिंचाई सुविधाओं, सरकारी योजनाओं के प्रति जागरूकता, आधुनिक कृषि पद्धतियों और कृषि उपज के लिए बेहतर बाजार पहुंच के माध्यम से किसानों को मजबूत करना।"
+        },
+        {
+          num: "03",
+          title: "हर बच्चे के लिए गुणवत्तापूर्ण शिक्षा",
+          desc: "शैक्षिक सुविधाओं में सुधार करने, डिजिटल लर्निंग को बढ़ावा देने और युवाओं के लिए कौशल विकास के अवसरों का समर्थन करने की दिशा में काम करना।"
+        },
+        {
+          num: "04",
+          title: "स्वास्थ्य सेवा पहुंच के भीतर",
+          desc: "ग्रामीण परिवारों के लिए स्वास्थ्य सेवाओं, स्वास्थ्य शिविरों, मातृ देखभाल और चिकित्सा सुविधाओं तक पहुंच को मजबूत करना।"
+        },
+        {
+          num: "05",
+          title: "रोजगार और युवा विकास",
+          desc: "कौशल प्रशिक्षण, उद्यमिता, स्व-रोजगार के अवसरों को बढ़ावा देना और सरकारी, निजी क्षेत्र और व्यवसाय में करियर बनाने के इच्छुक युवाओं का समर्थन करना।"
+        },
+        {
+          num: "06",
+          title: "महिला सशक्तिकरण",
+          desc: "महिलाओं के लिए शिक्षा, सुरक्षा, स्वयं सहायता समूहों, वित्तीय स्वतंत्रता और नेतृत्व के अवसरों को बढ़ावा देना।"
+        },
+        {
+          num: "07",
+          title: "स्वच्छ और आधुनिक गांव",
+          desc: "स्वच्छता, शुद्ध पेयजल, अपशिष्ट प्रबंधन और ग्राम सौंदर्यीकरण पहलों का समर्थन करना।"
+        },
+        {
+          num: "08",
+          title: "पारदर्शी और सुलभ जनसेवा",
+          desc: "जनता के लिए सदैव उपलब्ध रहना, जन समस्याओं को सुनना और यह सुनिश्चित करना कि पात्र नागरिकों को सरकारी कल्याणकारी योजनाओं का लाभ मिले।"
+        },
+        {
+          num: "09",
+          title: "सामाजिक समरसता और सांस्कृतिक विरासत",
+          desc: "समाज के सभी वर्गों के बीच एकता, सद्भाव और आपसी सम्मान को बढ़ावा देते हुए ज्ञानपुर की समृद्ध सांस्कृतिक परंपराओं को संरक्षित करना।"
+        },
+        {
+          num: "10",
+          title: "डिजिटल ज्ञानपुर",
+          desc: "जन कल्याण के लिए डिजिटल सेवाओं, ऑनलाइन शिकायत प्रणालियों, पारदर्शी संचार और प्रौद्योगिकी के अधिक उपयोग को प्रोत्साहित करना।"
+        }
+      ],
+      closing: "मेरा संकल्प आने वाली पीढ़ियों के लिए एक मजबूत, अधिक विकसित और अधिक समृद्ध ज्ञानपुर के निर्माण के लिए समर्पण, ईमानदारी और जनभागीदारी के साथ काम करना है।",
+      signature: "— डॉ. अजय शुक्ल"
     },
     contact: {
       heading: "संपर्क करें",
@@ -231,6 +288,7 @@ const translations = {
     nav: {
       home: "Home",
       about: "About",
+      vision: "Vision",
       journey: "Journey",
       work: "Service",
       gallery: "Gallery",
@@ -285,7 +343,8 @@ const translations = {
         { label: "Age", value: "47 Years" },
         { label: "Education", value: "M.A., Ph.D." },
         { label: "Father", value: "Shri Shivabhushan Shukla" },
-        { label: "Brothers", value: "Dr. Manoj Shukla, Dr. Vinod Shukla" },
+        { label: "Brothers", value: "Manoj Shukla, Dr. Vinod Shukla" },
+        { label: "Sons", value: "Nishant Shukla, Ishant Shukla" },
         { label: "Profession", value: "Agriculture & Social Service" },
         { label: "Address", value: "Badagaon, Jangiganj, Bhadohi, U.P." },
         { label: "Party", value: "Bharatiya Janata Party" }
@@ -346,18 +405,73 @@ const translations = {
         "Party Worker Meeting",
         "Inspection of Development Works",
         "Public Court (Janata Darbar)",
-        "Ceremonial Address"
+        "Ceremonial Address",
+        "Social Seminar",
+        "Tree Plantation Drive",
+        "Independence Day Celebration",
+        "Foundation Stone of Development Schemes",
+        "Welfare Distribution for Needy",
+        "Guidance & Youth Dialogue"
       ]
     },
     vision: {
-      heading: "Vision",
-      quote: "Our strength is in our unity, our future is in our resolve",
-      attribution: "— Dr. Ajay Shukla",
-      pillars: [
-        { icon: "🏗️", title: "Development", desc: "Dedicated to Bhadohi's growth and progress" },
-        { icon: "🎓", title: "Education", desc: "Empowering youth with opportunity and skills" },
-        { icon: "🤝", title: "Social Justice", desc: "Raising the voice of every section of society" }
-      ]
+      heading: "Vision for Gyanpur",
+      subHeading: "A Developed, Prosperous and Inclusive Gyanpur",
+      description: "My vision is to build Gyanpur as a constituency where every family has access to quality education, healthcare, employment opportunities, modern infrastructure and effective public services.",
+      points: [
+        {
+          num: "01",
+          title: "Better Roads and Connectivity",
+          desc: "To improve roads connecting villages, markets and towns so that farmers, students and businesses can travel safely and efficiently."
+        },
+        {
+          num: "02",
+          title: "Empowering Farmers",
+          desc: "To strengthen support for farmers through better irrigation facilities, awareness of government schemes, modern farming practices and improved market access for agricultural produce."
+        },
+        {
+          num: "03",
+          title: "Quality Education for Every Child",
+          desc: "To work towards improving educational facilities, promoting digital learning and supporting skill development opportunities for youth."
+        },
+        {
+          num: "04",
+          title: "Healthcare Within Reach",
+          desc: "To strengthen healthcare services, health camps, maternal care and access to medical facilities for rural families."
+        },
+        {
+          num: "05",
+          title: "Employment and Youth Development",
+          desc: "To encourage skill training, entrepreneurship, self-employment opportunities and support for young people seeking careers in government, private sector and business."
+        },
+        {
+          num: "06",
+          title: "Women Empowerment",
+          desc: "To promote education, safety, self-help groups, financial independence and leadership opportunities for women."
+        },
+        {
+          num: "07",
+          title: "Clean and Modern Villages",
+          desc: "To support sanitation, clean drinking water, waste management and village beautification initiatives."
+        },
+        {
+          num: "08",
+          title: "Transparent and Accessible Public Service",
+          desc: "To remain available to the people, listen to public grievances and ensure that deserving citizens receive the benefits of government welfare schemes."
+        },
+        {
+          num: "09",
+          title: "Social Harmony and Cultural Heritage",
+          desc: "To preserve the rich cultural traditions of Gyanpur while promoting unity, harmony and mutual respect among all sections of society."
+        },
+        {
+          num: "10",
+          title: "Digital Gyanpur",
+          desc: "To encourage digital services, online grievance systems, transparent communication and greater use of technology for public welfare."
+        }
+      ],
+      closing: "My commitment is to work with dedication, honesty and public participation to build a stronger, more developed and more prosperous Gyanpur for future generations.",
+      signature: "— Dr. Ajay Shukla"
     },
     contact: {
       heading: "Get in Touch",
@@ -475,7 +589,7 @@ const Navbar = () => {
   }, []);
 
   useEffect(() => {
-    const sections = ['home', 'about', 'journey', 'work', 'gallery', 'contact'];
+    const sections = ['home', 'about', 'vision', 'journey', 'work', 'gallery', 'contact'];
     const observerOptions = {
       root: null,
       rootMargin: '-30% 0px -30% 0px',
@@ -506,6 +620,7 @@ const Navbar = () => {
   const menuItems = [
     { id: 'home', label: t.nav.home },
     { id: 'about', label: t.nav.about },
+    { id: 'vision', label: t.nav.vision },
     { id: 'journey', label: t.nav.journey },
     { id: 'work', label: t.nav.work },
     { id: 'gallery', label: t.nav.gallery },
@@ -537,7 +652,7 @@ const Navbar = () => {
                 {lang === 'hi' ? 'डॉ. अजय शुक्ल' : 'Dr. Ajay Shukla'}
               </span>
               <span className="block text-[9px] uppercase font-bold text-mutedText/75 tracking-wider font-inter">
-                BJP Bhadohi, U.P.
+                BJP leader, Bhadohi Gyanpur U.P.
               </span>
             </div>
           </div>
@@ -1005,7 +1120,13 @@ const GallerySection = () => {
     'gallery-14.jpg',
     'gallery-15.jpg',
     'gallery-16.jpg',
-    'gallery-17.jpg'
+    'gallery-17.jpg',
+    'gallery-19.jpg',
+    'gallery-20.jpg',
+    'gallery-21.jpg',
+    'gallery-22.jpg',
+    'gallery-23.jpg',
+    'gallery-24.jpg'
   ];
 
   const handlePrev = () => {
@@ -1107,6 +1228,10 @@ const GallerySection = () => {
                     isGallery18 ? 'h-full object-cover object-center' : 'h-auto'
                   }`}
                   alt={photo}
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.src = 'assests/gallery-1.jpg';
+                  }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent pointer-events-none z-10" />
                 {/* Hover overlay */}
@@ -1241,9 +1366,11 @@ const GallerySection = () => {
                     : 'News Coverage'
                 }
                 onError={(e) => {
+                  e.target.onerror = null;
                   if (lightboxData.type === 'news') {
-                    e.target.onerror = null;
                     e.target.src = `assests/new${lightboxData.index + 1}.jpeg`;
+                  } else {
+                    e.target.src = 'assests/gallery-1.jpg';
                   }
                 }}
               />
@@ -1274,50 +1401,82 @@ const GallerySection = () => {
 // VISION SECTION COMPONENT
 // =============================================================
 const VisionSection = () => {
-  const { t } = useLanguage();
+  const { lang, t } = useLanguage();
 
   return (
-    <section className="bg-sectionAltBg py-24 px-6 text-darkText relative overflow-hidden">
-      <div className="max-w-5xl mx-auto text-center relative z-10">
-        {/* Quote Block */}
+    <section id="vision" className="bg-sectionAltBg py-24 px-6 text-darkText relative overflow-hidden border-t border-saffronBorder">
+      {/* Background elements */}
+      <div className="absolute inset-0 bg-gradient-to-br from-pageBg via-saffronPale/40 to-pageBg pointer-events-none" />
+      
+      <div className="max-w-6xl mx-auto relative z-10">
+        {/* Section Header */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.15 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          className="text-center mb-16"
+        >
+          <span className="text-xs uppercase tracking-widest text-primarySaffron mb-2 block font-inter font-bold">
+            {lang === 'hi' ? 'हमारा विजन' : 'Our Vision'}
+          </span>
+          <h2 className="text-3xl md:text-5xl font-bold text-darkText font-heading mb-4">
+            {t.vision.heading}
+          </h2>
+          <div className="w-16 h-0.5 bg-primarySaffron mx-auto mb-6" />
+          <h3 className="text-xl md:text-2xl font-bold text-primarySaffron max-w-3xl mx-auto leading-relaxed">
+            {t.vision.subHeading}
+          </h3>
+          <p className="text-base md:text-lg text-mutedText max-w-4xl mx-auto mt-4 leading-relaxed font-inter">
+            {t.vision.description}
+          </p>
+        </motion.div>
+
+        {/* 10 Points in a beautiful grid of rectangular blocks */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+          {t.vision.points.map((point, idx) => (
+            <motion.div
+              key={idx}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.1 }}
+              transition={{ duration: 0.5, delay: (idx % 2) * 0.1 }}
+              className="group flex items-start space-x-5 p-6 bg-cardBg border border-cardBorder rounded-none hover:border-primarySaffron hover:shadow-md transition-all duration-300 h-full"
+            >
+              {/* Number with dynamic animation on hover */}
+              <div className="flex-shrink-0 text-3xl font-black text-primarySaffron/35 group-hover:text-primarySaffron transition-colors duration-300 font-heading">
+                {point.num}
+              </div>
+              <div className="flex-grow">
+                <h4 className="text-lg font-bold text-darkText group-hover:text-primarySaffron transition-colors duration-300 mb-2 leading-snug">
+                  {point.title}
+                </h4>
+                <p className="text-mutedText text-sm leading-relaxed font-inter">
+                  {point.desc}
+                </p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Signature & Commitment Statement */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, ease: "easeOut" }}
-          className="relative max-w-3xl mx-auto"
+          className="text-center mt-16 max-w-3xl mx-auto"
         >
-          <span className="block text-7xl text-primarySaffron/25 font-serif leading-none select-none text-center">
+          <span className="block text-5xl text-primarySaffron/25 font-serif leading-none select-none text-center mb-2">
             “
           </span>
-          <p className="text-xl md:text-2xl italic font-medium leading-relaxed max-w-xl mx-auto font-heading text-darkText">
-            {t.vision.quote}
+          <p className="text-lg md:text-xl font-bold text-darkText leading-relaxed mb-6 font-heading">
+            {t.vision.closing}
           </p>
-          <span className="block text-xs uppercase tracking-widest text-primarySaffron font-bold mt-4 font-inter">
-            {t.vision.attribution}
+          <span className="block text-sm uppercase tracking-widest text-goldAccent font-black font-inter">
+            {t.vision.signature}
           </span>
-          <div className="w-16 h-px bg-primarySaffron mx-auto mt-8" />
         </motion.div>
-
-        {/* 3 Pillar Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16 max-w-4xl mx-auto">
-          {t.vision.pillars.map((pillar, pidx) => (
-            <motion.div
-              key={pidx}
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: pidx * 0.1 }}
-              className="bg-cardBg border border-cardBorder rounded p-8 text-center hover:-translate-y-1 hover:shadow-lg hover:border-cardHoverBorder transition-all duration-300 border-t-2 border-t-primarySaffron flex flex-col justify-center items-center"
-            >
-              <div className="w-12 h-12 rounded-full bg-saffronPale border border-saffronBorder flex items-center justify-center text-2xl mb-4">
-                {pillar.icon}
-              </div>
-              <h4 className="text-base font-bold text-darkText mb-2 leading-tight">{pillar.title}</h4>
-              <p className="text-mutedText text-xs leading-relaxed font-inter">{pillar.desc}</p>
-            </motion.div>
-          ))}
-        </div>
       </div>
     </section>
   );
@@ -1424,24 +1583,33 @@ const ContactSection = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-9 h-9 rounded-full border border-saffronBorder flex items-center justify-center text-mutedText hover:bg-primarySaffron hover:text-white hover:border-primarySaffron transition-all"
+                  title="Instagram"
                 >
-                  <span className="text-xs font-bold font-inter">IG</span>
+                  <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051C.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                  </svg>
                 </a>
                 <a
                   href="https://www.facebook.com/share/19RkahjGha/?mibextid=wwXIfr"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-9 h-9 rounded-full border border-saffronBorder flex items-center justify-center text-mutedText hover:bg-primarySaffron hover:text-white hover:border-primarySaffron transition-all"
+                  title="Facebook"
                 >
-                  <span className="text-xs font-bold font-inter">FB</span>
+                  <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                    <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
+                  </svg>
                 </a>
                 <a
                   href="https://wa.me/919415375693"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-9 h-9 rounded-full border border-saffronBorder flex items-center justify-center text-mutedText hover:bg-primarySaffron hover:text-white hover:border-primarySaffron transition-all"
+                  title="WhatsApp"
                 >
-                  <span className="text-xs font-bold font-inter">WA</span>
+                  <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm5.835-3.292c1.661.986 3.285 1.503 4.908 1.504 5.514.003 10.02-4.507 10.024-10.027.002-2.674-1.037-5.188-2.93-7.085-1.892-1.894-4.403-2.933-7.078-2.934C5.253.169.75 4.679.746 10.2c-.001 1.76.46 3.477 1.395 4.996L1.134 20.24l5.241-1.374c-.16.27-.32.54-.483.824z" />
+                  </svg>
                 </a>
               </div>
             </div>
@@ -1575,6 +1743,7 @@ const Footer = () => {
           {[
             { id: 'home', label: t.nav.home },
             { id: 'about', label: t.nav.about },
+            { id: 'vision', label: t.nav.vision },
             { id: 'journey', label: t.nav.journey },
             { id: 'work', label: t.nav.work },
             { id: 'gallery', label: t.nav.gallery },
@@ -1604,30 +1773,43 @@ const Footer = () => {
 
         {/* Social Icons */}
         <div className="flex space-x-3 mb-8">
-          {[
-            { href: "https://www.instagram.com/iamajayshuklabjp?igsh=dGJ3ZTJydDQ4eGIx", label: "IG" },
-            { href: "https://www.facebook.com/share/19RkahjGha/?mibextid=wwXIfr", label: "FB" },
-            { href: "https://wa.me/919415375693", label: "WA" }
-          ].map((soc, sidx) => (
-            <a
-              key={sidx}
-              href={soc.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-9 h-9 rounded-full border border-saffronBorder flex items-center justify-center text-mutedText hover:bg-primarySaffron hover:text-white hover:border-primarySaffron transition-all font-inter text-xs font-bold"
-            >
-              {soc.label}
-            </a>
-          ))}
+          <a
+            href="https://www.instagram.com/iamajayshuklabjp?igsh=dGJ3ZTJydDQ4eGIx"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-9 h-9 rounded-full border border-saffronBorder flex items-center justify-center text-mutedText hover:bg-primarySaffron hover:text-white hover:border-primarySaffron transition-all"
+            title="Instagram"
+          >
+            <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051C.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+            </svg>
+          </a>
+          <a
+            href="https://www.facebook.com/share/19RkahjGha/?mibextid=wwXIfr"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-9 h-9 rounded-full border border-saffronBorder flex items-center justify-center text-mutedText hover:bg-primarySaffron hover:text-white hover:border-primarySaffron transition-all"
+            title="Facebook"
+          >
+            <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
+            </svg>
+          </a>
+          <a
+            href="https://wa.me/919415375693"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-9 h-9 rounded-full border border-saffronBorder flex items-center justify-center text-mutedText hover:bg-primarySaffron hover:text-white hover:border-primarySaffron transition-all"
+            title="WhatsApp"
+          >
+            <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm5.835-3.292c1.661.986 3.285 1.503 4.908 1.504 5.514.003 10.02-4.507 10.024-10.027.002-2.674-1.037-5.188-2.93-7.085-1.892-1.894-4.403-2.933-7.078-2.934C5.253.169.75 4.679.746 10.2c-.001 1.76.46 3.477 1.395 4.996L1.134 20.24l5.241-1.374c-.16.27-.32.54-.483.824z" />
+            </svg>
+          </a>
         </div>
 
         {/* Full divider */}
-        <div className="w-full h-px bg-saffronBorder/40 mb-6"></div>
-
-        {/* Copyright */}
-        <p className="text-[10px] text-mutedText/60 font-inter">
-          {t.footer.copy}
-        </p>
+        <div className="w-full h-px bg-saffronBorder/40 mb-2"></div>
       </div>
     </footer>
   );
