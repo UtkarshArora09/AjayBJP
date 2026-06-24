@@ -1551,8 +1551,8 @@ const ContactSection = () => {
                   <span className="block text-[9px] uppercase font-bold text-primarySaffron tracking-widest mb-1">
                     {lang === 'hi' ? 'ईमेल' : 'Email'}
                   </span>
-                  <a href="mailto:iamAjayShuklaBJP@gmail.com" className="text-sm font-semibold text-darkText hover:text-primarySaffron transition-colors">
-                    iamAjayShuklaBJP@gmail.com
+                  <a href="mailto:drajayshuklabjp@gmail.com" className="text-sm font-semibold text-darkText hover:text-primarySaffron transition-colors">
+                    drajayshuklabjp@gmail.com
                   </a>
                 </div>
 
