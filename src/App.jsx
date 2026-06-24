@@ -74,10 +74,10 @@ const translations = {
       bio: "डॉ. अजय शुक्ल भारतीय जनता पार्टी के समर्पित कार्यकर्ता हैं जो तीन दशकों से अधिक समय से भदोही की जनता की सेवा में संलग्न हैं। छात्र राजनीति से अपनी यात्रा प्रारंभ कर जिला पंचायत सदस्य तक की यात्रा उनके अदम्य साहस और जनसेवा के प्रति समर्पण की कहानी कहती है।",
       bioEn: "Dr. Ajay Shukla is a dedicated BJP worker who has been serving the people of Bhadohi for over three decades. His journey from student politics to District Panchayat Member is a testament to his unwavering commitment to public service.",
       details: [
-        { label: "उम्र", value: "47 वर्ष" },
+        { label: "उम्र", value: "50 वर्ष" },
         { label: "शिक्षा", value: "एम.ए., पी.एच.डी." },
         { label: "पिता", value: "श्री शिवभूषण शुक्ल" },
-        { label: "भाई", value: "मनोज शुक्ल, डॉ. विनोद शुक्ल" },
+        { label: "भाई", value: "मनोज शुक्ल, विनोद शुक्ल" },
         { label: "पुत्र", value: "निशांत शुक्ल, ईशांत शुक्ल" },
         { label: "व्यवसाय", value: "कृषि एवं समाज सेवा" },
         { label: "निवास स्थान", value: "बड़ागाँव, जंगीगंज, भदोही, उत्तर प्रदेश" },
@@ -182,7 +182,7 @@ const translations = {
       ]
     },
     gallery: {
-      heading: "सेवा के पल",
+      heading: "फोटो गैलरी",
       sub: "तस्वीरें",
       viewMore: "Instagram पर और देखें",
       photos: [
@@ -340,10 +340,10 @@ const translations = {
       heading: "Meet the Leader",
       bio: "Dr. Ajay Shukla is a dedicated BJP worker who has been serving the people of Bhadohi for over three decades. His journey from student politics to District Panchayat Member is a testament to his unwavering commitment to public service.",
       details: [
-        { label: "Age", value: "47 Years" },
+        { label: "Age", value: "50 Years" },
         { label: "Education", value: "M.A., Ph.D." },
         { label: "Father", value: "Shri Shivabhushan Shukla" },
-        { label: "Brothers", value: "Manoj Shukla, Dr. Vinod Shukla" },
+        { label: "Brothers", value: "Manoj Shukla, Vinod Shukla" },
         { label: "Sons", value: "Nishant Shukla, Ishant Shukla" },
         { label: "Profession", value: "Agriculture & Social Service" },
         { label: "Address", value: "Badagaon, Jangiganj, Bhadohi, U.P." },
@@ -384,7 +384,7 @@ const translations = {
       ]
     },
     gallery: {
-      heading: "Moments of Service",
+      heading: "Photo Gallery",
       sub: "Photos",
       viewMore: "See More on Instagram",
       photos: [
@@ -1236,11 +1236,8 @@ const GallerySection = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent pointer-events-none z-10" />
                 {/* Hover overlay */}
                 <div className="absolute inset-0 bg-primarySaffron/95 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center p-4 text-center">
-                  <span className="text-white text-xs font-bold uppercase tracking-widest font-inter bg-black/60 px-3 py-1.5 rounded mb-2">
+                  <span className="text-white text-xs font-bold uppercase tracking-widest font-inter bg-black/60 px-3 py-1.5 rounded">
                     {lang === 'hi' ? '🔍 तस्वीर देखें' : '🔍 View Image'}
-                  </span>
-                  <span className="text-white text-sm font-semibold drop-shadow-md leading-normal">
-                    {photo}
                   </span>
                 </div>
               </motion.div>
