@@ -3,11 +3,11 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://drajayshukla.in/</loc>
-    <lastmod>2026-06-25</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://drajayshukla.in/assests/hero-politician.jpg</image:loc>
+      <image:loc>https://drajayshukla.in/og-image.jpg</image:loc>
       <image:title>Dr. Ajay Shukla BJP Leader Bhadohi</image:title>
       <image:caption>Dr. Ajay Shukla, BJP leader from Bhadohi, Uttar Pradesh</image:caption>
     </image:image>
