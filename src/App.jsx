@@ -280,7 +280,7 @@ const translations = {
     },
     footer: {
       tagline: "आप दीजिये समर्थन, मैं दूंगा परिवर्तन",
-      copy: "© 2025 डॉ. अजय शुक्ल | भारतीय जनता पार्टी — भदोही, उ.प्र."
+      copy: "© 2026 डॉ. अजय शुक्ल | भारतीय जनता पार्टी — भदोही, उ.प्र."
     }
   },
 
@@ -482,7 +482,7 @@ const translations = {
     },
     footer: {
       tagline: "You give support, I will bring change",
-      copy: "© 2025 Dr. Ajay Shukla | Bharatiya Janata Party — Bhadohi, U.P."
+      copy: "© 2026 Dr. Ajay Shukla | Bharatiya Janata Party — Bhadohi, U.P."
     }
   }
 };
@@ -1843,7 +1843,23 @@ const Footer = () => {
         </div>
 
         {/* Full divider */}
-        <div className="w-full h-px bg-saffronBorder/40 mb-2"></div>
+        <div className="w-full h-px bg-saffronBorder/40 mb-4"></div>
+
+        {/* Copyright and Credits */}
+        <div className="text-[10px] text-mutedText/70 space-y-1.5 font-inter">
+          <p>{t.footer.copy}</p>
+          <p className="text-[8px] uppercase tracking-widest opacity-60">
+            {lang === 'hi' ? 'वेबसाइट निर्माता: ' : 'Developed by '}
+            <a 
+              href="https://www.linkedin.com/in/utkarsh-arora09" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-primarySaffron transition-colors duration-200 underline decoration-primarySaffron/40 underline-offset-2"
+            >
+              Utkarsh Arora
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );
